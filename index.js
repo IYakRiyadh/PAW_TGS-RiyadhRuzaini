@@ -1,34 +1,8 @@
 /** @format */
 
-const itemMakanan = [
-  {
-    makanan: 'Mie Ayam',
-    harga: '14000',
-  },
-  {
-    makanan: 'Mie Instant',
-    harga: '12000',
-  },
-  {
-    makanan: 'Soto Ayam',
-    harga: '17000',
-  },
-  {
-    makanan: 'Sop Kambing',
-    harga: '19000',
-  },
-  {
-    makanan: 'Nasi Goreng',
-    harga: '15000',
-  },
-];
-
 function produk() {
   var minuman = document.getElementById('minuman').value;
   var makanan = document.getElementById('makanan').value;
-
-  var selectMinuman = document.getElementById('minuman').ariaSelected;
-  var selectMakanan = document.getElementById('makanan').ariaSelected;
 
   var jumHarMak = makanan * parseInt(document.getElementById('jumlah_makanan').value);
   var jumHarMin = minuman * parseInt(document.getElementById('jumlah_minum').value);
@@ -43,13 +17,6 @@ btn.addEventListener('click', function () {
   var jumMinum = parseInt(document.querySelector('#jumlah_minum').value);
   var hargaMinum = parseInt(document.querySelector('#harga_minum').value);
   var hargaMakan = parseInt(document.querySelector('#harga_makan').value);
-  // var minuman = document.getElementById('minuman').ariaSelected;
-  // var makanan = document.getElementById('makanan').ariaSelected;
-
-  // var selected = document.getElementById('op').ariaSelected;
-  // for (let i = 0; i < selected.length; i++) {
-  //   makanan = selected[i];
-  // }
 
   var tb = document.querySelector('tbody');
   var trBaru = document.createElement('tr');
@@ -57,8 +24,7 @@ btn.addEventListener('click', function () {
   var tdB2 = document.createElement('td');
   var tdB3 = document.createElement('td');
   var tdB4 = document.createElement('td');
-  // var textMakan = document.createTextNode(makanan);
-  // var textMimun = document.createTextNode(minuman);
+
   var textJ = document.createTextNode(jumMakan + jumMinum);
   var inputH = document.createElement('input');
   var valMakanan = document.createElement('input');
@@ -81,9 +47,6 @@ btn.addEventListener('click', function () {
 
   var tampilkanFood = makanVal.options[makanVal.selectedIndex].text;
   var tampilkanMinum = minumVal.options[minumVal.selectedIndex].text;
-
-  // document.getElementById('makanTxtInput').value = tampilkanFood);
-  // document.getElementById('minumTxtInput').value = tampilkanMinum);
 
   valMakanan.setAttribute('value', tampilkanFood);
   valMinum.setAttribute('value', tampilkanMinum);
