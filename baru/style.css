@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.items {
+  float: left;
+  width: 50%;
+}
+
+.cart {
+  float: right;
+  width: 50%;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+button {
+  margin-top: 10px;
+}
+
+#total-price {
+  font-weight: bold;
+}
